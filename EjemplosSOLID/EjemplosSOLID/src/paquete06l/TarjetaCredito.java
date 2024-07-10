@@ -12,10 +12,12 @@ public class TarjetaCredito {
 
     private String nombre;
     private String numero;
+    private Banco banco;
 
-    public TarjetaCredito(String n, String nu) {
+    public TarjetaCredito(String n, String nu, Banco b) {
         nombre = n;
         numero = nu;
+        banco = b;
     }
 
     public void establecerNombre(String n) {
@@ -24,6 +26,14 @@ public class TarjetaCredito {
 
     public void establecerNumero(String n) {
         numero = n;
+    }
+
+    public void establecerBanco(Banco n) {
+        banco = n;
+    }
+
+    public Banco obtenerBanco() {
+        return banco;
     }
 
     public String obtenerNombre() {
