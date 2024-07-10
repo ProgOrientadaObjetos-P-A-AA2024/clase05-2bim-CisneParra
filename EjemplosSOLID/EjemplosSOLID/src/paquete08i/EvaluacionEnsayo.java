@@ -32,7 +32,8 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
         return totalProblemas;
     }
     
-    
+    // Estamos totalmente obligados a implementar  los metodos de la interfaz,
+    // debido a que se usa la interfaz en todo el encabezado
     @Override
     public void establecerPromedioEnsayo() {
 
